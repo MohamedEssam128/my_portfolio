@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="50%" stop-color="#052014"/>
+      <stop offset="100%" stop-color="#020817"/>
+    </linearGradient>
+    <pattern id="grid5" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg5)"/>
+  <rect width="800" height="450" fill="url(#grid5)"/>
+
+  <!-- RAG Architecture Pipeline Flow -->
+  <g transform="translate(110, 150)">
+    <!-- 1. Documents -->
+    <rect x="0" y="0" width="110" height="80" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="55" y="35" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Documents</text>
+    <text x="55" y="55" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Chunking Pipeline</text>
+
+    <!-- Arrow 1 -->
+    <path d="M 115 40 L 145 40" stroke="#10b981" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 2. Embedding -->
+    <rect x="150" y="0" width="115" height="80" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="207" y="35" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">BAAI/bge-m3</text>
+    <text x="207" y="55" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Dense Embeddings</text>
+
+    <!-- Arrow 2 -->
+    <path d="M 270 40 L 300 40" stroke="#10b981" stroke-width="2"/>
+
+    <!-- 3. PostgreSQL Vector DB -->
+    <rect x="305" y="0" width="125" height="80" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="367" y="35" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">PostgreSQL</text>
+    <text x="367" y="55" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">pgvector Store</text>
+
+    <!-- Arrow 3 -->
+    <path d="M 435 40 L 465 40" stroke="#10b981" stroke-width="2"/>
+
+    <!-- 4. Gemini LLM -->
+    <rect x="470" y="0" width="110" height="80" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="525" y="35" fill="#a7f3d0" font-family="system-ui, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Gemini LLM</text>
+    <text x="525" y="55" fill="#6ee7b7" font-family="system-ui, sans-serif" font-size="9" text-anchor="middle">Grounded Answer</text>
+  </g>
+
+  <!-- Query & Gradio UI callout -->
+  <rect x="260" y="50" width="280" height="40" rx="20" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="400" y="75" fill="#34d399" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Semantic Retrieval + Context Grounding</text>
+
+  <!-- Title Banner -->
+  <rect x="120" y="360" width="560" height="54" rx="12" fill="rgba(15,23,42,0.8)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="400" y="385" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">RAG-BASED KNOWLEDGE ASSISTANT</text>
+  <text x="400" y="403" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">BAAI/bge-m3 · PostgreSQL Vector DB · Gemini LLM · Gradio Interface</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="50%" stop-color="#240c1d"/>
+      <stop offset="100%" stop-color="#020817"/>
+    </linearGradient>
+    <pattern id="grid6" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg6)"/>
+  <rect width="800" height="450" fill="url(#grid6)"/>
+
+  <!-- Compass / Roadmap Network Representation -->
+  <g transform="translate(400, 190)">
+    <!-- Radial navigation rings -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#f43f5e" stroke-width="1" stroke-dasharray="4 6" opacity="0.3"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="#fb7185" stroke-width="1" opacity="0.4"/>
+
+    <!-- Path nodes -->
+    <line x1="-160" y1="20" x2="-60" y2="0" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="-60" y1="0" x2="0" y2="-40" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="0" y1="-40" x2="80" y2="-20" stroke="#f43f5e" stroke-width="2"/>
+    <line x1="80" y1="-20" x2="160" y2="30" stroke="#f43f5e" stroke-width="2" stroke-dasharray="4 4"/>
+
+    <!-- Nodes -->
+    <circle cx="-160" cy="20" r="14" fill="#881337" stroke="#fb7185" stroke-width="2"/>
+    <circle cx="-60" cy="0" r="16" fill="#881337" stroke="#fb7185" stroke-width="2"/>
+    <circle cx="0" cy="-40" r="22" fill="#be123c" stroke="#f43f5e" stroke-width="2.5"/>
+    <circle cx="80" cy="-20" r="16" fill="#881337" stroke="#fb7185" stroke-width="2"/>
+    <circle cx="160" cy="30" r="14" fill="#881337" stroke="#fb7185" stroke-width="2"/>
+
+    <!-- Center target star -->
+    <path d="M 0 -50 L 3 -43 L 10 -40 L 3 -37 L 0 -30 L -3 -37 L -10 -40 L -3 -43 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Labels -->
+  <rect x="250" y="50" width="300" height="36" rx="18" fill="rgba(244,63,94,0.12)" stroke="rgba(244,63,94,0.3)" stroke-width="1"/>
+  <text x="400" y="73" fill="#fda4af" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Personalized Skill Trajectory Mapping</text>
+
+  <!-- Title Banner -->
+  <rect x="120" y="360" width="560" height="54" rx="12" fill="rgba(15,23,42,0.8)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="400" y="385" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">AI CAREER NAVIGATOR</text>
+  <text x="400" y="403" fill="#fb7185" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Career Trajectory Mapping · Skill Gap Analysis · Opportunity Guidance</text>
+</svg>

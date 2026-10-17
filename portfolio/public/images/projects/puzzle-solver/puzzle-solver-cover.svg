@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020817"/>
+      <stop offset="50%" stop-color="#141432"/>
+      <stop offset="100%" stop-color="#020817"/>
+    </linearGradient>
+    <pattern id="grid7" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg7)"/>
+  <rect width="800" height="450" fill="url(#grid7)"/>
+
+  <!-- Left: Tic-Tac-Toe Minimax Game Grid -->
+  <g transform="translate(180, 110)">
+    <line x1="45" y1="0" x2="45" y2="140" stroke="#818cf8" stroke-width="2"/>
+    <line x1="95" y1="0" x2="95" y2="140" stroke="#818cf8" stroke-width="2"/>
+    <line x1="0" y1="45" x2="140" y2="45" stroke="#818cf8" stroke-width="2"/>
+    <line x1="0" y1="95" x2="140" y2="95" stroke="#818cf8" stroke-width="2"/>
+
+    <!-- X's and O's -->
+    <!-- X at (0,0) -->
+    <path d="M 12 12 L 32 32 M 32 12 L 12 32" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <!-- O at (1,1) -->
+    <circle cx="70" cy="70" r="13" fill="none" stroke="#f43f5e" stroke-width="3"/>
+    <!-- X at (2,2) -->
+    <path d="M 108 108 L 128 128 M 128 108 L 108 128" stroke="#38bdf8" stroke-width="3" stroke-linecap="round"/>
+    <!-- Winning Strike line -->
+    <line x1="5" y1="5" x2="135" y2="135" stroke="#22d3ee" stroke-width="2.5" stroke-dasharray="4 4"/>
+
+    <text x="70" y="170" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Minimax Search Tree</text>
+  </g>
+
+  <!-- Center divider / algorithm arrow -->
+  <path d="M 370 180 L 430 180" stroke="#6366f1" stroke-width="2" stroke-dasharray="4 4"/>
+
+  <!-- Right: Sudoku 9x9 Constraint Grid preview -->
+  <g transform="translate(480, 110)">
+    <rect x="0" y="0" width="140" height="140" fill="#0f172a" stroke="#818cf8" stroke-width="2"/>
+    <!-- 3x3 major blocks -->
+    <line x1="46" y1="0" x2="46" y2="140" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="93" y1="0" x2="93" y2="140" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="0" y1="46" x2="140" y2="46" stroke="#818cf8" stroke-width="1.5"/>
+    <line x1="0" y1="93" x2="140" y2="93" stroke="#818cf8" stroke-width="1.5"/>
+
+    <!-- Numbers -->
+    <text x="23" y="32" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">5</text>
+    <text x="70" y="32" fill="#a5b4fc" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">3</text>
+    <text x="117" y="32" fill="#38bdf8" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">7</text>
+    <text x="23" y="78" fill="#a5b4fc" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">6</text>
+    <text x="70" y="78" fill="#22d3ee" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">1</text>
+    <text x="117" y="78" fill="#a5b4fc" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle">9</text>
+
+    <text x="70" y="170" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Backtracking CSP</text>
+  </g>
+
+  <!-- Title Banner -->
+  <rect x="120" y="360" width="560" height="54" rx="12" fill="rgba(15,23,42,0.8)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="400" y="385" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">ALGORITHMIC PUZZLE SOLVERS</text>
+  <text x="400" y="403" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">Minimax Game Tree Search · Alpha-Beta Pruning · Constraint Satisfaction</text>
+</svg>
